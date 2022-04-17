@@ -1,7 +1,7 @@
 import json
 import urllib.parse
 import boto3
-from predicter import predict_saved_model as predict_model
+from src.predicter import predict_saved_model as predict_model
 
 # creation a session to connect to s3
 session = boto3.Session(
