@@ -59,6 +59,7 @@ def main(aws_key_id, aws_secret_access_key):
                     "dog": prediction["dog"]
                     })
             }
+            
 # main program
 if __name__ == '__main__':
     #predict_model(img_path='./cute_dog_photo.jpg',

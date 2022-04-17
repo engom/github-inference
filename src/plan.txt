@@ -8,6 +8,9 @@ Plan of review:
   > confire ymal
     > step 1: test
     > step 2: inference
+    
+---------------------------------------------------------------------
+---------------------------------------------------------------------
 
 Run inference on action ymal code:
 

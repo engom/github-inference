@@ -2,6 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 import numpy as np
 import PIL
+
 # predictor function
 def predict_saved_model(img_path, model_path):
     '''
