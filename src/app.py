@@ -3,16 +3,10 @@ import urllib.parse
 import boto3
 from predicter import predict_saved_model as predict_model
 
-# get aws acount credentials
-source = open("/Users/elhadji/Desktop/AWS/keys/rootkey.csv", 'r').readlines()
-cred = {} # store credentials to a dict()
-for i in range(2):
-    cred[source[i].strip().split('=')[0]]=source[i].strip().split('=')[1]
-
 # creation a session to connect to s3
 session = boto3.Session(
-                        aws_access_key_id=cred['AWSAccessKeyId'],
-                        aws_secret_access_key=cred['AWSSecretKey'],
+                        aws_access_key_id=secrets.AWSACCESSKEYID,
+                        aws_secret_access_key=secrets.AWSSECRETKEY,
                         region_name='us-east-1')
 
 
