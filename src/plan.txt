@@ -1,0 +1,10 @@
+Plan of review:
+  > refactor the code
+    > set secrets parameters for aws
+  > design repo with two subdirectories:
+    > src
+    > test
+  > write test (install pytest)
+  > confire ymal
+    > step 1: test
+    > step 2: inference
