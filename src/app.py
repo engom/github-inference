@@ -3,16 +3,15 @@ import urllib.parse
 import boto3
 from src.predicter import predict_saved_model as predict_model
 
-# creation a session to connect to s3
-session = boto3.Session(
-                        aws_access_key_id=secrets.AWSACCESSKEYID,
-                        aws_secret_access_key=secrets.AWSSECRETKEY,
-                        region_name='us-east-1')
-
-
 
 # main function
-def main():
+def main(aws_key_id, aws_secret_access_key):
+    # creation a session to connect to s3
+    session = boto3.Session(
+                            aws_access_key_id=aws_key_id,
+                            aws_secret_access_key=aws_secret_access_key,
+                            region_name='us-east-1')
+
     # Set up some variables we'll need
     print("start ....")
     image_path = "/tmp/image.jpg"
@@ -64,4 +63,4 @@ def main():
 if __name__ == '__main__':
     #predict_model(img_path='./cute_dog_photo.jpg',
     #            model_path='./model.h5')
-    main()
+    main(aws_key_id, aws_secret_access_key)
