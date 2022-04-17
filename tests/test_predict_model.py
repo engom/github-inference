@@ -1,5 +1,5 @@
 # import predict_saved_model from src
-from predicter import predict_saved_model
+from src.predicter import predict_saved_model
 
 
 # prediction of cute_dog_photo image
