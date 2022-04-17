@@ -19,7 +19,7 @@ keras==2.8.0
 Keras-Preprocessing==1.1.2
 libclang==13.0.0
 Markdown==3.3.6
-numpy==1.22.3
+numpy==1.21.6
 oauthlib==3.2.0
 opt-einsum==3.3.0
 Pillow==9.1.0
